@@ -24,8 +24,8 @@
   }
 
   .image:hover img {
-    -webkit-transform: scale(1.1);
-  	transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+  	transform: scale(1.05);
   }
 
   .image {

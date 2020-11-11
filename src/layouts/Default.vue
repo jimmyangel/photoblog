@@ -7,7 +7,7 @@
           <div class="has-text-centered has-text-weight-medium">PHOTOBLOG</div>
         </g-link>
       </div>
-      <g-link class="top-item icon-link"  to="/">
+      <g-link class="top-item icon-link"  to="/about">
         <font-awesome :icon="['fas', 'info']"/>
       </g-link>
       <g-link class="icon-link" to="/">

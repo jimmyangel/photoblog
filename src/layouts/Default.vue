@@ -4,9 +4,8 @@
       <div class="top-item">
         <g-link to="/">
           <Logo />
-          <!--<g-image style="max-height: 64px;" src="~/assets/svgs/logo.svg" alt="Logo" /> -->
+          <div class="has-text-centered has-text-weight-medium">PHOTOBLOG</div>
         </g-link>
-        <div class="has-text-centered">PHOTOBLOG</div>
       </div>
       <g-link class="top-item icon-link"  to="/">
         <font-awesome :icon="['fas', 'info']"/>

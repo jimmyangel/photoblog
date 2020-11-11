@@ -14,5 +14,8 @@ module.exports = {
         typeName: 'Post'
       }
     }
-  ]
+  ],
+  templates: {
+    Post: '/post/:year-:month-:day-:title'
+  }
 }

@@ -1,10 +1,12 @@
 <template>
   <div>
     <div class="top">
-      <g-link class="top-item" to="/">
-        <g-image style="max-height: 64px;" src="~/assets/svgs/logo.svg" alt="Logo" />
+      <div class="top-item">
+        <g-link to="/">
+          <g-image style="max-height: 64px;" src="~/assets/svgs/logo.svg" alt="Logo" />
+        </g-link>
         <div class="has-text-centered">PHOTOBLOG</div>
-      </g-link>
+      </div>
       <g-link class="top-item"  to="/">
         I
       </g-link>
@@ -27,6 +29,7 @@ query {
 
 <style>
   .top {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
   }

@@ -3,16 +3,12 @@
     <div class="container">
       <div class="columns is-multiline is-centered">
         <div class="column is-half" v-for="item in $page.allPost.edges">
-          <div class="image is-square">
-            <g-image :src="item.node.thumbnail" />
-          </div>
-          {{item.node.title}}
-        </div>
-        <div class="column is-half" v-for="item in $page.allPost.edges">
-          <div class="image is-square">
-            <g-image :src="item.node.thumbnail" />
-          </div>
-          {{item.node.title}}
+          <g-link :to="item.node.path">
+            <div class="image is-square">
+              <g-image :src="item.node.thumbnail" />
+            </div>
+            {{item.node.title}}
+          </g-link>
         </div>
       </div>
     </div>
@@ -27,6 +23,7 @@
           title
           date
           thumbnail
+          path
         }
       }
     }

@@ -3,12 +3,16 @@
     <div class="top">
       <div class="top-item">
         <g-link to="/">
-          <g-image style="max-height: 64px;" src="~/assets/svgs/logo.svg" alt="Logo" />
+          <Logo />
+          <!--<g-image style="max-height: 64px;" src="~/assets/svgs/logo.svg" alt="Logo" /> -->
         </g-link>
         <div class="has-text-centered">PHOTOBLOG</div>
       </div>
-      <g-link class="top-item"  to="/">
-        I
+      <g-link class="top-item icon-link"  to="/">
+        <font-awesome :icon="['fas', 'info']"/>
+      </g-link>
+      <g-link class="icon-link" to="/">
+        <font-awesome :icon="['fas', 'rss']"/>
       </g-link>
     </div>
     <transition name="fade" appear>
@@ -16,6 +20,13 @@
         <slot />
       </section>
     </transition>
+    <section>
+      <footer class="footer">
+        <div class="has-text-centered is-size-7">
+          Copyright © 2020 <a href="https://hildemorin.com">Hilde Morin</a>
+        </div>
+      </footer>
+    </section>
   </div>
 </template>
 
@@ -38,8 +49,23 @@ query {
     margin-left: auto;
   }
 
+  .icon-link {
+    padding: 5px;
+  }
+
   img svg {
     fill: red;
   }
 
 </style>
+
+<script>
+  import Logo from '~/components/Logo.vue'
+
+  export default {
+    components: {
+      Logo
+    }
+  }
+
+</script>

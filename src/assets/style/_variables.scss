@@ -9,7 +9,11 @@
 // Set your colors
 
 $scheme-main: black;
-$text: #eee;
+$primary: $white-bis;
+$text: $white-bis;
+$link: $white-bis;
+$link-hover: $grey-light;
+$footer-background-color: black;
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
 

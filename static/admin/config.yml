@@ -26,6 +26,8 @@ collections:
       - {label: "About", name: "body", widget: "markdown"}
   - name: "post"
     label: "Post"
+    editor:
+       preview: false
     folder: "content/posts"
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/post"
     create: true

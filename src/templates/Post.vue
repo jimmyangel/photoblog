@@ -46,11 +46,11 @@ export default {
       photoIndex: 0
     }
   },
-  created() {
-  	window.addEventListener('keydown', this.keyEvent);
+  mounted() {
+  	document.addEventListener('keydown', this.keyEvent);
   },
   destroyed() {
-  	window.removeEventListener('keydown', this.keyEvent);
+  	document.removeEventListener('keydown', this.keyEvent);
   },
   methods: {
     keyEvent(e) {

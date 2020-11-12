@@ -11,7 +11,10 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/posts/**/post.md',
-        typeName: 'Post'
+        typeName: 'Post',
+        remark:{
+          autolinkHeadings: false
+        }
       }
     },
     {

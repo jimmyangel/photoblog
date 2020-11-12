@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  siteUrl: 'https://photoblog-hildemorin.netlify.app',
   siteName: 'Photoblog',
   plugins: [
     {
@@ -24,6 +25,26 @@ module.exports = {
         typeName: 'About',
         remark:{
           autolinkHeadings: false
+        }
+      }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Post',
+        feedOptions: {
+          title: "Hilde's photoblog",
+          feed_url: 'https://photoblog-hildemorin.netlify.app/rss.xml',
+          site_url: 'https://photoblog-hildemorin.netlify.app'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          date: node.date,
+          url: 'https://photoblog-hildemorin.netlify.app/post/' + node.path
+        }),
+        output: {
+          dir: './static',
+          name: 'rss.xml'
         }
       }
     }

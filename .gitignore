@@ -8,3 +8,4 @@ dist
 .env.*
 package-lock.json
 yarn.lock
+static/rss*.xml

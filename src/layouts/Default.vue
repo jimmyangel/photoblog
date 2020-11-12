@@ -15,7 +15,7 @@
       </g-link>
     </div>
     <transition name="fade" appear>
-      <section class="section">
+      <section>
         <slot />
       </section>
     </transition>

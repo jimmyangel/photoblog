@@ -1,2 +1,9 @@
-body {
+h1 {
+  @extend .title;
+  color: $text;
+}
+
+h2 {
+  @extend .subtitle;
+  color: $text;
 }

@@ -1,12 +1,38 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>About</h1>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <br>
+    <g-image class="banner" :src="$page.about.banner"></g-image>
+    <div class="section">
+      <div class="container">
+        <div v-html="$page.about.content"></div>
+      </div>
     </div>
   </Layout>
 </template>
+
+<style lang="scss" scoped>
+  ::v-deep .banner {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: 600px) {
+    ::v-deep .banner {
+      height: 150px;
+    }
+  }
+
+</style>
+
+<page-query>
+  query About {
+    about: about (id: "about") {
+      banner
+      content
+    }
+  }
+</page-query>
 
 <script>
 export default {

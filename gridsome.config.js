@@ -13,6 +13,16 @@ module.exports = {
         path: 'content/posts/**/post.md',
         typeName: 'Post'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/about/about.md',
+        typeName: 'About',
+        remark:{
+          autolinkHeadings: false
+        }
+      }
     }
   ],
   templates: {

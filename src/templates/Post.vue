@@ -1,17 +1,19 @@
 <template>
   <Layout>
-    <div class="has-text-centered container">
-      {{new Date($page.post.date).toDateString()}} - {{$page.post.title}}
+    <div class="section">
+      <div class="has-text-centered container">
+        {{new Date($page.post.date).toDateString()}} - {{$page.post.title}}
+      </div>
+      <br>
+      <b-carousel v-model="photoIndex" :autoplay="false" :indicator-inside="false" indicator-style="is-lines" icon-size="is-large">
+        <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
+          <div class="image is-16by9">
+            <g-image :src="photo.photourl" />
+          </div>
+          <div class="has-text-centered">{{photo.photocaption}}</div>
+        </b-carousel-item>
+      </b-carousel>
     </div>
-    <br>
-    <b-carousel :autoplay="false" :indicator-inside="false" indicator-style="is-lines">
-      <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
-        <div class="image is-16by9">
-          <g-image :src="photo.photourl" />
-        </div>
-        <div class="has-text-centered">{{photo.photocaption}}</div>
-      </b-carousel-item>
-    </b-carousel>
   </Layout>
 </template>
 
@@ -33,3 +35,35 @@
     }
   }
 </page-query>
+
+<script>
+export default {
+  metaInfo: {
+    title: 'Post'
+  },
+  data() {
+    return {
+      photoIndex: 0
+    }
+  },
+  created() {
+  	window.addEventListener('keydown', this.keyEvent);
+  },
+  destroyed() {
+  	window.removeEventListener('keydown', this.keyEvent);
+  },
+  methods: {
+    keyEvent(e) {
+      let l = this.$page.post.photos.length
+      if (e.key === 'ArrowRight') {
+        this.photoIndex = (this.photoIndex + 1) % l
+        return
+      }
+      if (e.key === 'ArrowLeft') {
+        this.photoIndex = (this.photoIndex + (l - 1)) % l
+        return
+      }
+    }
+  }
+}
+</script>

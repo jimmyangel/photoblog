@@ -21,5 +21,6 @@ collections:
     media_folder: ""
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Banner image", name: "banner", widget: "image" , allow_multiple: false, required: true}
       - {label: "About", name: "body", widget: "markdown"}

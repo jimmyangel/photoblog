@@ -10,9 +10,9 @@
       <g-link class="top-item icon-link"  to="/about">
         <font-awesome :icon="['fas', 'info']"/>
       </g-link>
-      <g-link class="icon-link" to="/rss.xml">
+      <a class="icon-link" href="/rss.xml">
         <font-awesome :icon="['fas', 'rss']"/>
-      </g-link>
+      </a>
     </div>
     <transition name="fade" appear>
       <section>

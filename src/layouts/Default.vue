@@ -33,6 +33,9 @@
 query {
   metadata {
     siteName
+    siteUrl
+    twitterId
+    keywords
   }
 }
 </static-query>
@@ -62,6 +65,44 @@ query {
   import Logo from '~/components/Logo.vue'
 
   export default {
+    metaInfo() {
+      return {
+        meta: [
+          {
+            property: 'og:title',
+            content: this.$parent.pageTitle
+          },
+          {
+            property: 'keywords',
+            content: this.$static.metadata.keywords
+          },
+          {
+            property: 'og:image',
+            content: this.$parent.pageImage
+          },
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image',
+          },
+          {
+            name: 'twitter:site',
+            content: this.$static.metadata.twitterId
+          },
+          {
+            name: 'twitter:creator',
+            content: this.$static.metadata.twitterId
+          },
+          {
+            name: 'twitter:title',
+            content: this.$parent.pageTitle
+          },
+          {
+            name: 'twitter:image',
+            content: this.$parent.pageImage
+          }
+        ]
+      }
+    },
     components: {
       Logo
     }

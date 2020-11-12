@@ -30,6 +30,7 @@
     post: post (path: $path) {
       title
       date
+      thumbnail
       photos {
         photourl
         photocaption
@@ -66,6 +67,14 @@ export default {
         this.photoIndex = (this.photoIndex + (l - 1)) % l
         return
       }
+    }
+  },
+  computed: {
+    pageTitle() {
+      return this.$page.post.title
+    },
+    pageImage() {
+      return this.$page.post.thumbnail.src
     }
   }
 }

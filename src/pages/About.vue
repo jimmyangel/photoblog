@@ -40,6 +40,14 @@
 export default {
   metaInfo: {
     title: 'About'
+  },
+  computed: {
+    pageTitle() {
+      return this.$page.about.title
+    },
+    pageImage() {
+      return this.$page.about.banner.src
+    }
   }
 }
 </script>

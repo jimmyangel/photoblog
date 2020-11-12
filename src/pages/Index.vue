@@ -55,6 +55,14 @@
 export default {
   metaInfo: {
     title: 'Photoblog'
+  },
+  computed: {
+    pageTitle() {
+      return "Hilde's Photoblog"
+    },
+    pageImage() {
+      return this.$page.allPost.edges.length ? this.$page.allPost.edges[0].node.thumbnail.src : ''
+    }
   }
 }
 </script>

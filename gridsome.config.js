@@ -6,7 +6,12 @@
 
 module.exports = {
   siteUrl: 'https://photoblog-hildemorin.netlify.app',
-  siteName: 'Photoblog',
+  siteName: "Hilde's Photoblog",
+  siteDescription: "Hilde's Photoblog",
+  metadata: {
+    twitterId: '@HildeVMorin',
+    keywords: 'photos,photoblog,pictures,photography'
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',

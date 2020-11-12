@@ -13,6 +13,8 @@
           <div class="has-text-centered">{{photo.photocaption}}</div>
         </b-carousel-item>
       </b-carousel>
+      <br>
+      <div class="container is-max-desktop" v-html="$page.post.content"></div>
     </div>
   </Layout>
 </template>
@@ -32,6 +34,7 @@
         photourl
         photocaption
       }
+      content
     }
   }
 </page-query>

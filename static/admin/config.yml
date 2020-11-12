@@ -22,7 +22,7 @@ collections:
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
       - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Banner image", name: "banner", widget: "image" , allow_multiple: false, required: true}
+      - {label: "Banner image", hint: "Wide and 300px height", name: "banner", widget: "image" , allow_multiple: false, required: true}
       - {label: "About", name: "body", widget: "markdown"}
   - name: "post"
     label: "Post"
@@ -36,7 +36,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image" , allow_multiple: false, required: true}
+      - {label: "Thumbnail", hint: "Use a square image", name: "thumbnail", widget: "image" , allow_multiple: false, required: true}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Photos", name: "photos", widget: "list", fields: [
           {label: "Caption", name: "photocaption", widget: "string", required: true},

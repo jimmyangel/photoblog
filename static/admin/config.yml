@@ -21,6 +21,21 @@ collections:
     media_folder: ""
     fields:
       - {label: "Id", name: "id", widget: "hidden", required: true}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Banner image", name: "banner", widget: "image" , allow_multiple: false, required: true}
       - {label: "About", name: "body", widget: "markdown"}
+  - name: "post"
+    label: "Post"
+    folder: "content/posts"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/post"
+    create: true
+    delete: true
+    media_folder: ""
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image" , allow_multiple: false, required: true}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Photos", name: "photos", widget: "list", fields: [
+          {label: "Caption", name: "photocaption", widget: "string", required: true},
+          {label: "Photo", name: "photourl", widget: "image" , allow_multiple: false, required: true}]}
+      - {label: "Post entry", name: "body", widget: "markdown"}

@@ -4,6 +4,7 @@
     <g-image class="banner" :src="$page.about.banner"></g-image>
     <div class="section">
       <div class="container">
+        <h1>{{$page.about.title}}</h1>
         <div v-html="$page.about.content"></div>
       </div>
     </div>
@@ -28,6 +29,7 @@
 <page-query>
   query About {
     about: about (id: "about") {
+      title
       banner
       content
     }

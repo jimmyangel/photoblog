@@ -1,5 +1,6 @@
 ---
 id: about
+title: About this site
 banner: ./banner.jpg
 ---
 # About this site

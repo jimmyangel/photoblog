@@ -1,3 +1,3 @@
-# Photoblog
+# Hilde's Photoblog
 
-In development...
+Content copyright © Hilde Morin

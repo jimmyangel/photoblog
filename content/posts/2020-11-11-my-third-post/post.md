@@ -3,7 +3,7 @@ title: My third post
 tags:
   - welcome
 date: 2020-11-11T00:00:00.000Z
-thumbnail: ./thumb.jpg
+thumbnail: thumb.jpg
 photos:
   - photourl: ./mongo.jpg
     photocaption: Here is a caption for this specific photo

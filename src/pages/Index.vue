@@ -5,10 +5,12 @@
         <div class="columns is-multiline is-centered">
           <div class="column is-one-third" v-for="item in $page.allPost.edges">
             <g-link :to="item.node.path">
-              <div class="image is-square">
-                <g-image :src="item.node.thumbnail" />
-              </div>
-              <div class="has-text-centered">{{new Date(item.node.date).toDateString()}} - {{item.node.title}}</div>
+              <figure>
+                <div class="image is-square">
+                  <g-image :src="item.node.thumbnail" alt="" />
+                </div>
+                <figcaption class="has-text-centered">{{new Date(item.node.date).toDateString()}} - {{item.node.title}}</figcaption>
+              </figure>
             </g-link>
           </div>
         </div>

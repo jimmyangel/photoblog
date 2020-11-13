@@ -7,10 +7,12 @@
       <br>
       <b-carousel v-model="photoIndex" :autoplay="false" :indicator-inside="false" indicator-style="is-lines" icon-size="is-large">
         <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
-          <div class="image is-16by9">
-            <g-image :src="photo.photourl" />
-          </div>
-          <div class="has-text-centered">{{photo.photocaption}}</div>
+          <figure>
+            <div class="image is-16by9">
+              <g-image :src="photo.photourl" alt="" />
+            </div>
+            <figcaption class="has-text-centered">{{photo.photocaption}}</figcaption>
+          </figure>
         </b-carousel-item>
       </b-carousel>
       <br>

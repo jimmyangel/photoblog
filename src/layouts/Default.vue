@@ -7,10 +7,10 @@
           <div class="has-text-centered has-text-weight-medium">PHOTOBLOG</div>
         </g-link>
       </div>
-      <g-link class="top-item icon-link"  to="/about">
+      <g-link class="top-item icon-link" aria-label="About" to="/about">
         <font-awesome :icon="['fas', 'info']"/>
       </g-link>
-      <a class="icon-link" href="/rss.xml">
+      <a class="icon-link" aria-label="RSS" href="/rss.xml">
         <font-awesome :icon="['fas', 'rss']"/>
       </a>
     </div>

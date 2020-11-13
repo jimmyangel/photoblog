@@ -41,4 +41,4 @@ collections:
       - {label: "Photos", name: "photos", widget: "list", fields: [
           {label: "Caption", name: "photocaption", widget: "string", required: true},
           {label: "Photo", name: "photourl", widget: "image" , allow_multiple: false, required: true}]}
-      - {label: "Post entry", name: "body", widget: "markdown"}
+      - {label: "Post entry", name: "body", widget: "markdown", required: false}

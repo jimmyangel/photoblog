@@ -32,7 +32,7 @@ collections:
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/post"
     create: true
     delete: true
-    media_folder: "./images/"
+    media_folder: ""
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}

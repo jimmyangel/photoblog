@@ -1,12 +1,17 @@
 {
   "name": "photoblog",
   "version": "0.9.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimmyangel/photoblog.git"
+  },
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
   "author": "Ricardo Morin",
+  "license": "MIT",
   "dependencies": {
     "buefy": "^0.9.4",
     "gridsome": "^0.7.22"
@@ -19,7 +24,6 @@
     "@gridsome/transformer-remark": "^0.6.3",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-rss": "^1.2.0",
-    "netlify-cms": "^2.10.68",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.0.5",
     "traverse": "^0.6.6"

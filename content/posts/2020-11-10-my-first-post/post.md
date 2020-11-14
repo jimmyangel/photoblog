@@ -8,4 +8,4 @@ photos:
   - photourl: rm-vista-portland-desde-pittock-mansion.jpg
     photocaption: Here is a caption for this specific photo
 ---
-On a perfect fall day, this is the view of Portland from Pittock Mansion.
+On a perfect fall day, this is the view of Portland from the Pittock Mansion.

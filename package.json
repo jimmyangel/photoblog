@@ -17,7 +17,6 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.3",
-    "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-rss": "^1.2.0",
     "netlify-cms": "^2.10.68",

@@ -18,7 +18,6 @@ module.exports = {
       options: {
         path: 'content/posts/**/post.md',
         typeName: 'Post',
-        coverField: 'thumbnail',
         remark:{
           autolinkHeadings: false
         }
@@ -32,12 +31,6 @@ module.exports = {
         remark:{
           autolinkHeadings: false
         }
-      }
-    },
-    {
-      use: 'gridsome-plugin-netlify-cms',
-      options: {
-        publicPath: '/admin'
       }
     },
     {

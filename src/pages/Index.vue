@@ -45,7 +45,7 @@
         node {
           title
           date
-          thumbnail
+          thumbnail (width: 800, height: 800, quality: 90)
           path
         }
       }

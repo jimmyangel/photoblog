@@ -1,5 +1,5 @@
 ---
-title: View of from Pittock Mansion
+title: View from Pittock Mansion
 date: 2017-11-01T23:00:00.000Z
 thumbnail: rm-vista-portland-desde-pittock-mansion-thumbnail.jpg
 tags:

@@ -15,19 +15,16 @@ module.exports = function (api) {
   })
 }
 
+/*
+  This plugin inspired from gridsome-plugin-netlify-cms-paths which did not meet my needs
+  Consider making it a public plugin
+*/
 const fs = require('fs')
 const path = require('path')
 const RemarkTransformer = require('@gridsome/transformer-remark')
+const traverse = require('traverse')
 
 class NetlifyPaths {
-  // defaultOptions merged with this.options in App.vue
-  static defaultOptions() {
-    return {
-      contentTypes: ['Post', 'About'],
-      coverField: undefined,
-    }
-  }
-
   constructor(api, options = {}) {
     this.options = options
 
@@ -35,9 +32,7 @@ class NetlifyPaths {
 
     for (const {use, options: opts} of config.plugins) {
       if (use === '@gridsome/source-filesystem' && opts.typeName) {
-        console.log('Type:', opts)
         const {typeName, route} = opts,
-          coverField = opts.coverField || options.coverField,
           ContentType = store.addContentType({
             typeName: typeName,
             route: route,
@@ -57,19 +52,20 @@ class NetlifyPaths {
         }
 
         // Fix cover images
-        if (coverField !== undefined) {
-          console.info(`Fixing cover images for ${typeName}.${coverField}`)
-          ContentType.on('add', node => {
-            node[coverField] = this.fixPath(node[coverField], context + '/' + node.fileInfo.directory + '/')
-            console.log(node)
+        let self = this
+        console.info(`Fixing image paths for ${typeName}`)
+        ContentType.on('add', node => {
+          traverse(node).forEach(function(item) {
+            if (typeof(item) === 'string' && item.match(/.(jpg|jpeg|png|svg|gif)$/i)) {
+              this.update(self.fixPath(item, context + '/' + node.fileInfo.directory + '/'))
+            }
           })
-        }
+        })
       }
     }
   }
 
   fixPath(imagePath, nodePath) {
-    console.log(imagePath, nodePath)
     let out = imagePath
     if (imagePath !== undefined) {
       if (!imagePath.includes('/')) {
@@ -80,7 +76,6 @@ class NetlifyPaths {
         }
       }
     }
-    console.log(out)
     return out
   }
 }

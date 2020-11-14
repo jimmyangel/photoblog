@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="top">
-      <div class="top-item">
+      <div class="top-item logo-container">
         <g-link to="/">
           <Logo />
           <div class="has-text-centered has-text-weight-medium">PHOTOBLOG</div>
@@ -40,7 +40,7 @@ query {
 }
 </static-query>
 
-<style>
+<style lang="scss" scoped>
   .top {
     padding-top: 20px;
     display: flex;
@@ -49,6 +49,10 @@ query {
 
   .top-item {
     margin-left: auto;
+  }
+
+  .logo-container {
+    padding-left: 35px;
   }
 
   .icon-link {

@@ -1,18 +1,18 @@
 <template>
   <div>
     <div class="top">
-      <div class="top-item logo-container">
-        <g-link to="/">
-          <Logo />
-          <div class="has-text-centered has-text-weight-medium">PHOTOBLOG</div>
-        </g-link>
-      </div>
-      <g-link class="top-item icon-link" aria-label="About" to="/about">
-        <font-awesome :icon="['fas', 'info']"/>
+      <g-link to="/">
+        <Logo />
+        <div class="has-text-centered has-text-weight-medium">PHOTOBLOG</div>
       </g-link>
-      <a class="icon-link" aria-label="RSS" href="/rss.xml">
-        <font-awesome :icon="['fas', 'rss']"/>
-      </a>
+      <div class="icon-container">
+        <g-link class="icon-link" aria-label="About" to="/about">
+          <font-awesome :icon="['fas', 'info']"/>
+        </g-link>
+        <a class="icon-link" aria-label="RSS" href="/rss.xml">
+          <font-awesome :icon="['fas', 'rss']"/>
+        </a>
+      </div>
     </div>
     <transition name="fade" appear>
       <section>
@@ -47,20 +47,14 @@ query {
     justify-content: center;
   }
 
-  .top-item {
-    margin-left: auto;
-  }
-
-  .logo-container {
-    padding-left: 35px;
+  .icon-container {
+    position: absolute;
+    top: 20px;
+    right: 0px;
   }
 
   .icon-link {
     padding: 5px;
-  }
-
-  img svg {
-    fill: red;
   }
 
 </style>

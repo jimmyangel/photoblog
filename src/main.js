@@ -9,13 +9,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 
 import {
-  faAngleLeft, faAngleRight, faInfo, faRss
+  faAngleLeft, faAngleRight, faInfo, faRss, faSearch
 } from '@fortawesome/free-solid-svg-icons'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 library.add(
-  faAngleLeft, faAngleRight, faInfo, faRss
+  faAngleLeft, faAngleRight, faInfo, faRss, faSearch
 )
 
 export default function (Vue, { router, head, isClient }) {

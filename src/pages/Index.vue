@@ -2,6 +2,11 @@
   <Layout>
     <div class="section">
       <div class="container">
+        <div style="width: 220px;" class="columns is-mobile search-icon">
+          <a class="column is-narrow" href="" aria-label="Search" @click="openSearchModal()">
+            <font-awesome :icon="['fas', 'search']" />
+          </a>
+        </div>
         <div class="columns is-multiline is-centered">
           <div class="column is-one-third" v-for="item in $page.allPost.edges">
             <g-link :to="item.node.path">
@@ -54,23 +59,28 @@
 </page-query>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'Photoblog'
-  },
-  computed: {
-    pageTitle() {
-      return "Hilde's Photoblog"
+  import SearchModal from '~/components/SearchModal'
+
+  export default {
+    metaInfo: {
+      title: 'Photoblog'
     },
-    pageImage() {
-      return this.$page.allPost.edges.length ? this.$page.allPost.edges[0].node.thumbnail.src : ''
+    methods: {
+      openSearchModal() {
+        this.$buefy.modal.open({
+          parent: this,
+          hasModalCard: true,
+          component: SearchModal
+        })
+      }
+    },
+    computed: {
+      pageTitle() {
+        return "Hilde's Photoblog"
+      },
+      pageImage() {
+        return this.$page.allPost.edges.length ? this.$page.allPost.edges[0].node.thumbnail.src : ''
+      }
     }
   }
-}
 </script>
-
-<style>
-  .home-links a {
-    margin-right: 1rem;
-  }
-</style>

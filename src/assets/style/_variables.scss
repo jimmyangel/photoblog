@@ -8,7 +8,9 @@
 
 // Set your colors
 
-$scheme-main: black;
+/*$scheme-main: black; */
+$body-background-color: black;
+/*$scheme-invert: $white-bis; */
 $primary: $white-bis;
 $text: $white-bis;
 $link: $white-bis;
@@ -16,6 +18,21 @@ $link-hover: $grey-light;
 $footer-background-color: black;
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
+
+$carousel-arrow-background: $scheme-invert;
+
+$carousel-indicator-color: $white-bis;
+$carousel-indicator-border: black;
+
+/*$modal-background-background-color: bulmaRgba($scheme-main, 0.86);
+
+$card-background-color: $white-bis;*/
+$card-color: black;
+
+$input-icon-color: $grey;
+$input-icon-active-color: $grey-darker;
+$input-focus-border-color: $grey-darker;
+$input-focus-box-shadow-color: bulmaRgba($grey, 0.25);
 
 // Customizations
 

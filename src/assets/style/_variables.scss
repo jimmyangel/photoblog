@@ -6,36 +6,25 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
-// Set your colors
-
-/*$scheme-main: black; */
 $body-background-color: black;
-/*$scheme-invert: $white-bis; */
 $primary: $white-bis;
-$text: $white-bis;
-$link: $white-bis;
+
+$text: $primary;
+$link: $primary;
 $link-hover: $grey-light;
-$footer-background-color: black;
+$footer-background-color: $body-background-color;
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
 
 $carousel-arrow-background: $scheme-invert;
 
-$carousel-indicator-color: $white-bis;
-$carousel-indicator-border: black;
-
-/*$modal-background-background-color: bulmaRgba($scheme-main, 0.86);
-
-$card-background-color: $white-bis;*/
-$card-color: black;
+$carousel-indicator-color: $primary;
+$carousel-indicator-border: $body-background-color;
 
 $input-icon-color: $grey;
 $input-icon-active-color: $grey-darker;
 $input-focus-border-color: $grey-darker;
 $input-focus-box-shadow-color: bulmaRgba($grey, 0.25);
-
-// Customizations
-
 
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')

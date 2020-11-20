@@ -3,7 +3,7 @@
     <div class="modal-card-body">
       <header class="search-card-header">
         <div class="search-input control has-icons-left">
-          <input class="input" placeholder="Search" ref="search">
+          <input class="input" v-model="searchString" placeholder="Search" ref="search">
           <span class="icon is-left">
             <font-awesome :icon="['fas', 'search']"/>
           </span>
@@ -13,7 +13,13 @@
       <section>
         <br>
         <div class="panel" @click="$emit('close')">
-          <g-link v-for="item in $static.allPost.edges" :to="item.node.path" class="panel-block">{{new Date(item.node.date).toDateString()}} - {{item.node.title}}</g-link>
+          <g-link
+            v-for="item in $static.allPost.edges" v-bind:key="item.path"
+            :to="item.node.path"
+            v-bind:class="matchClass(item.node.title)"
+            class="panel-block">
+              {{new Date(item.node.date).toDateString()}} - {{item.node.title}}
+          </g-link>
         </div>
       </section>
     </div>
@@ -61,18 +67,25 @@
 </static-query>
 
 <script>
+  import {getPureText} from '~/utils/misc'
 
   export default {
     name: 'SearchModal',
     data() {
       return {
+        searchString: ''
       }
     },
     mounted() {
-      console.log('mounted')
       this.$nextTick(() => {
         this.$refs.search.focus()
       })
+    },
+    methods: {
+      matchClass(value) {
+        if (getPureText(value).includes(getPureText(this.searchString))) return ''
+        return 'is-hidden'
+      }
     }
   }
 </script>

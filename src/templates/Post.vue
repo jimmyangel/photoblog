@@ -6,7 +6,13 @@
         <small>{{new Date($page.post.date).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}}</small>
       </div>
       <br>
-      <b-carousel v-model="photoIndex" :autoplay="false" :indicator-inside="false" indicator-style="is-lines" icon-size="is-large">
+      <b-carousel
+          v-model="photoIndex"
+          :arrow="$page.post.photos.length > 1"
+          :indicator="$page.post.photos.length > 1" 
+          :autoplay="false" :indicator-inside="false"
+          indicator-style="is-lines"
+          icon-size="is-large">
         <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
           <figure>
             <div class="image is-16by9">

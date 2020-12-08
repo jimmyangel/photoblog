@@ -2,7 +2,8 @@
   <Layout>
     <div class="section">
       <div class="has-text-centered container">
-        {{new Date($page.post.date).toDateString()}} - {{$page.post.title}}
+        {{$page.post.title}}<br>
+        <small>{{new Date($page.post.date).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}}</small>
       </div>
       <br>
       <b-carousel v-model="photoIndex" :autoplay="false" :indicator-inside="false" indicator-style="is-lines" icon-size="is-large">
@@ -11,6 +12,7 @@
             <div class="image is-16by9">
               <g-image :src="photo.photourl" alt="" />
             </div>
+            <br>
             <figcaption class="has-text-centered">{{photo.photocaption}}</figcaption>
           </figure>
         </b-carousel-item>

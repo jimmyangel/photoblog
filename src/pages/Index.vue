@@ -14,7 +14,10 @@
                 <div class="image is-square">
                   <g-image :src="item.node.thumbnail" alt="" />
                 </div>
-                <figcaption class="has-text-centered">{{new Date(item.node.date).toDateString()}} - {{item.node.title}}</figcaption>
+                <figcaption class="has-text-centered">
+                  {{item.node.title}}<br>
+                  <small>{{new Date(item.node.date).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}}</small>
+                </figcaption>
               </figure>
             </g-link>
           </div>

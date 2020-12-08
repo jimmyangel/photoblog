@@ -3,7 +3,7 @@
     <div class="top">
       <g-link to="/">
         <Logo />
-        <div class="has-text-centered has-text-weight-medium">PHOTOBLOG</div>
+        <div class="has-text-centered" style="font-family: 'Syncopate'; font-weight: 600;">PHOTOBLOG</div>
       </g-link>
       <div class="icon-container">
         <g-link class="icon-link" aria-label="About" to="/about">

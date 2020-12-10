@@ -24,7 +24,7 @@
         </b-carousel-item>
       </b-carousel>
       <br>
-      <div class="container is-max-desktop" v-html="$page.post.content"></div>
+      <div class="content" v-html="$page.post.content"></div>
     </div>
   </Layout>
 </template>
@@ -44,6 +44,11 @@
     .section {
       padding: 3rem 0rem
     }
+  }
+
+  .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
 </style>

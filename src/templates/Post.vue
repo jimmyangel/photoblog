@@ -16,7 +16,7 @@
         <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
           <figure>
             <div class="image is-16by9">
-              <g-image style="object-fit: contain;" :src="photo.photourl" alt="" />
+              <g-image :src="photo.photourl" :alt="photo.photocaption" />
             </div>
             <br>
             <figcaption class="has-text-centered is-size-5">{{photo.photocaption}}</figcaption>
@@ -32,6 +32,18 @@
 <style lang="scss" scoped>
   .image img {
     object-fit: contain;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .section {
+      padding: 3rem 5rem
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .section {
+      padding: 3rem 0rem
+    }
   }
 
 </style>

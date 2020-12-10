@@ -9,17 +9,17 @@
       <b-carousel
           v-model="photoIndex"
           :arrow="$page.post.photos.length > 1"
-          :indicator="$page.post.photos.length > 1" 
+          :indicator="$page.post.photos.length > 1"
           :autoplay="false" :indicator-inside="false"
           indicator-style="is-lines"
           icon-size="is-large">
         <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
           <figure>
             <div class="image is-16by9">
-              <g-image :src="photo.photourl" alt="" />
+              <g-image style="object-fit: contain;" :src="photo.photourl" alt="" />
             </div>
             <br>
-            <figcaption class="has-text-centered">{{photo.photocaption}}</figcaption>
+            <figcaption class="has-text-centered is-size-5">{{photo.photocaption}}</figcaption>
           </figure>
         </b-carousel-item>
       </b-carousel>
@@ -33,6 +33,7 @@
   .image img {
     object-fit: contain;
   }
+
 </style>
 
 <page-query>

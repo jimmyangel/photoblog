@@ -6,6 +6,6 @@ tags:
   - welcome
 photos:
   - photourl: rm-vista-portland-desde-pittock-mansion.jpg
-    photocaption: Here is a caption for this specific photo
+    photocaption: Fall view of Portland
 ---
 On a perfect fall day, this is the view of Portland from the Pittock Mansion.

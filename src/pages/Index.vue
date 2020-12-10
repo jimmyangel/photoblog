@@ -12,7 +12,7 @@
             <g-link :to="item.node.path">
               <figure>
                 <div class="image is-square">
-                  <g-image :src="item.node.thumbnail" alt="" />
+                  <g-image :src="item.node.thumbnail" :alt="item.node.title" />
                 </div>
                 <figcaption class="has-text-centered">
                   {{item.node.title}}<br>

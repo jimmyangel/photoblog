@@ -6,9 +6,9 @@ photos:
   - photocaption: A typical Pacific Northwest garden
     photourl: 2020-01-dry-creek-falls-2.jpg
   - photourl: 2020-01-dry-creek-falls-5.jpg
-    photocaption: Trail to DRY CREEK FALLS
-  - photocaption: Trail to DRY CREEK FALLS
+    photocaption: Trail to Dry Creek Falls
+  - photocaption: Trail to Dry Creek Falls
     photourl: 2020-01-dry-creek-falls-3.jpg
-  - photocaption: DRY CREEK FALLS
+  - photocaption: Dry Creek Falls
     photourl: 2020-01-dry-creek-falls-1.jpg
 ---

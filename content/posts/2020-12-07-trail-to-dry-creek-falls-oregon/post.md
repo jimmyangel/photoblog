@@ -1,5 +1,5 @@
 ---
-title: Trail to DRY CREEK FALLS - Oregon
+title: Trail to Dry Creek Falls - Oregon
 date: 2020-01-31T03:14:00.000Z
 thumbnail: 2020-01-dry-creek-falls-thumbnail.jpg
 photos:

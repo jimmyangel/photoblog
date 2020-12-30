@@ -45,13 +45,16 @@ module.exports = {
         feedItemOptions: node => ({
           title: node.title,
           date: node.date,
-          url: 'https://photoblog.hildemorin.com/post' + node.path
+          url: 'https://photoblog.hildemorin.com' + node.path
         }),
         output: {
           dir: './static',
           name: 'rss.xml'
         }
       }
+    },
+    {
+      use: '@gridsome/plugin-sitemap'
     }
   ],
   templates: {

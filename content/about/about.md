@@ -1,6 +1,6 @@
 ---
 id: about
-title: About this site
+title: My Photoblog
 banner: ./banner.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
+Enjoying the endless world of photography! Always for fun, sometimes for inspiration for my fiber work.

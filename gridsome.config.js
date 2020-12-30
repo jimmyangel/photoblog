@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteUrl: 'https://photoblog-hildemorin.netlify.app',
+  siteUrl: 'https://photoblog.hildemorin.com/',
   siteName: "Hilde's Photoblog",
   siteDescription: "Hilde's Photoblog",
   metadata: {
@@ -39,13 +39,13 @@ module.exports = {
         contentTypeName: 'Post',
         feedOptions: {
           title: "Hilde's photoblog",
-          feed_url: 'https://photoblog-hildemorin.netlify.app/rss.xml',
-          site_url: 'https://photoblog-hildemorin.netlify.app'
+          feed_url: 'https://photoblog.hildemorin.com/rss.xml',
+          site_url: 'https://photoblog.hildemorin.com/'
         },
         feedItemOptions: node => ({
           title: node.title,
           date: node.date,
-          url: 'https://photoblog-hildemorin.netlify.app/post/' + node.path
+          url: 'https://photoblog.hildemorin.com/post/' + node.path
         }),
         output: {
           dir: './static',

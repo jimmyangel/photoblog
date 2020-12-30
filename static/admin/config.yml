@@ -9,7 +9,7 @@ show_preview_links: false
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
-site_url: https://photoblog-hildemorin.netlify.app
+site_url: https://photoblog.hildemorin.com
 
 collections:
   - name: "about"

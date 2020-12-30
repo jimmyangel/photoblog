@@ -40,12 +40,12 @@ module.exports = {
         feedOptions: {
           title: "Hilde's photoblog",
           feed_url: 'https://photoblog.hildemorin.com/rss.xml',
-          site_url: 'https://photoblog.hildemorin.com/'
+          site_url: 'https://photoblog.hildemorin.com'
         },
         feedItemOptions: node => ({
           title: node.title,
           date: node.date,
-          url: 'https://photoblog.hildemorin.com/post/' + node.path
+          url: 'https://photoblog.hildemorin.com/post' + node.path
         }),
         output: {
           dir: './static',

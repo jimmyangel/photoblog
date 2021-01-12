@@ -1,5 +1,5 @@
 ---
-title: Eagle Creek trail, Oregon
+title: Eagle Creek trail - Oregon
 date: 2021-01-08T02:38:00.000Z
 thumbnail: 2021-01-eagle-creek-reopened-thumbnail.jpg
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Portland Winter Light Festival - Oregon
-date: 2021-02-07T19:31:00.000Z
+date: 2020-02-07T19:31:00.000Z
 thumbnail: 2020-02-pdx-winter-light-festival-thumbnail.jpg
 photos:
   - photourl: 2020-02-pdx-winter-light-festival.jpg

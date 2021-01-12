@@ -14,7 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "buefy": "^0.9.4",
-    "gridsome": "^0.7.22"
+    "gridsome": "^0.7.22",
+    "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

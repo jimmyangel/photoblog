@@ -5,6 +5,8 @@ import Buefy from 'buefy'
 
 import DefaultLayout from '~/layouts/Default.vue'
 
+import InfiniteLoading from 'vue-infinite-loading'
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 
@@ -25,5 +27,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('font-awesome', FontAwesomeIcon)
 
   Vue.use(Buefy, {defaultIconComponent: 'font-awesome', defaultIconPack: 'fas'})
+
+  Vue.use(InfiniteLoading)
 
 }

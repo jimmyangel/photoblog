@@ -9,6 +9,8 @@ photos:
     photourl: 2020-12-feliz-navidad-2.jpg
   - photocaption: In the meantime ... some choose the warmer waters
     photourl: 2020-12-feliz-navidad-3.jpg
-  - photocaption: and then some more join.
+  - photocaption: and then some more join in.
     photourl: 2020-12-feliz-navidad-4.jpg
+  - photocaption: A short beach walk ...
+    photourl: 2020-12-feliz-navidad-5.jpg
 ---

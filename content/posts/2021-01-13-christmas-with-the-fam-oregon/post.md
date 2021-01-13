@@ -13,4 +13,6 @@ photos:
     photourl: 2020-12-feliz-navidad-4.jpg
   - photocaption: A short beach walk ...
     photourl: 2020-12-feliz-navidad-5.jpg
+  - photocaption: and some sight seeing.
+    photourl: 2020-12-feliz-navidad-7.jpg
 ---

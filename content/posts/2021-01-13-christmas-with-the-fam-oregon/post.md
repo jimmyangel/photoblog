@@ -15,4 +15,6 @@ photos:
     photourl: 2020-12-feliz-navidad-5.jpg
   - photocaption: and some sight seeing.
     photourl: 2020-12-feliz-navidad-7.jpg
+  - photourl: 2020-12-feliz-navidad-6.jpg
+    photocaption: Otter Crest Beach
 ---

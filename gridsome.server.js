@@ -33,7 +33,7 @@ class NetlifyPaths {
     for (const {use, options: opts} of config.plugins) {
       if (use === '@gridsome/source-filesystem' && opts.typeName) {
         const {typeName, route} = opts,
-          ContentType = store.addContentType({
+          ContentType = store.addCollection({
             typeName: typeName,
             route: route,
           })

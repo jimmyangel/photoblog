@@ -31,4 +31,6 @@ photos:
     photourl: 2020-12-feliz-navidad-12.jpg
   - photocaption: Christmas Eve - finally!
     photourl: 2020-12-feliz-navidad-14.jpg
+  - photocaption: Salud!
+    photourl: 2020-12-feliz-navidad-15.jpg
 ---

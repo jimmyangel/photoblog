@@ -25,4 +25,6 @@ photos:
     photourl: 2020-12-feliz-navidad-10.jpg
   - photocaption: French lesson with papa.
     photourl: 2020-12-feliz-navidad-11.jpg
+  - photocaption: Defying gravity?
+    photourl: 2020-12-feliz-navidad-13.jpg
 ---

@@ -19,4 +19,6 @@ photos:
     photocaption: Otter Crest Beach
   - photocaption: Mongo - Otter Crest Beach
     photourl: 2020-12-feliz-navidad-8.jpg
+  - photocaption: Dinner and entertainment
+    photourl: 2020-12-feliz-navidad-9.jpg
 ---

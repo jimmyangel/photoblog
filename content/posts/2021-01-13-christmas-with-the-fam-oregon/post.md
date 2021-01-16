@@ -21,6 +21,6 @@ photos:
     photourl: 2020-12-feliz-navidad-8.jpg
   - photocaption: Dinner and entertainment
     photourl: 2020-12-feliz-navidad-9.jpg
-  - photocaption: Some more tub time
+  - photocaption: and some more tub time.
     photourl: 2020-12-feliz-navidad-10.jpg
 ---

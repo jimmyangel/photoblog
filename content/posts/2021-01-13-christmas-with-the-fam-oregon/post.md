@@ -27,4 +27,6 @@ photos:
     photourl: 2020-12-feliz-navidad-11.jpg
   - photocaption: Defying gravity?
     photourl: 2020-12-feliz-navidad-13.jpg
+  - photocaption: Arepas anyone?
+    photourl: 2020-12-feliz-navidad-12.jpg
 ---

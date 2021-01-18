@@ -15,7 +15,7 @@
           icon-size="is-large">
         <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
           <figure>
-            <div class="image" v-bind:class="{'is-16by9': isWide}">
+            <div class="image is-16by9" v-bind:class="{'is-16by9': isWide}">
               <g-image :src="photo.photourl" :alt="photo.photocaption" />
             </div>
             <br>
@@ -49,6 +49,14 @@
   .content {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  ::v-deep .carousel-indicator {
+    flex-wrap: wrap;
+  }
+
+  ::v-deep .indicator-item {
+    padding-top: 10px;
   }
 
 </style>

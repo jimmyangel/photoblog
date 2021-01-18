@@ -15,7 +15,7 @@
           icon-size="is-large">
         <b-carousel-item v-for="(photo, i) in $page.post.photos" :key="i">
           <figure>
-            <div class="image is-16by9">
+            <div class="image" v-bind:class="{'is-16by9': isWide}">
               <g-image :src="photo.photourl" :alt="photo.photocaption" />
             </div>
             <br>
@@ -75,8 +75,15 @@ export default {
   },
   data() {
     return {
-      photoIndex: 0
+      photoIndex: 0,
+      innerWidth: 0
     }
+  },
+  created() {
+    this.innerWidth = window.innerWidth
+    window.addEventListener('resize', () => {
+      this.innerWidth = window.innerWidth
+    })
   },
   mounted() {
   	document.addEventListener('keydown', this.keyEvent);
@@ -103,6 +110,9 @@ export default {
     },
     pageImage() {
       return this.$page.post.thumbnail.src
+    },
+    isWide() {
+      return this.innerWidth > 500
     }
   }
 }

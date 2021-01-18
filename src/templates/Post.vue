@@ -88,10 +88,12 @@ export default {
     }
   },
   created() {
-    this.innerWidth = window.innerWidth
-    window.addEventListener('resize', () => {
+    if (process.isClient) {
       this.innerWidth = window.innerWidth
-    })
+      window.addEventListener('resize', () => {
+        this.innerWidth = window.innerWidth
+      })
+    }
   },
   mounted() {
   	document.addEventListener('keydown', this.keyEvent);

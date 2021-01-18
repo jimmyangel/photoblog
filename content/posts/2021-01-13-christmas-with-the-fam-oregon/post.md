@@ -15,4 +15,24 @@ photos:
     photourl: 2020-12-feliz-navidad-5.jpg
   - photocaption: and some sight seeing.
     photourl: 2020-12-feliz-navidad-7.jpg
+  - photourl: 2020-12-feliz-navidad-6.jpg
+    photocaption: Otter Crest Beach
+  - photocaption: Mongo - Otter Crest Beach
+    photourl: 2020-12-feliz-navidad-8.jpg
+  - photocaption: Dinner, entertainment ...
+    photourl: 2020-12-feliz-navidad-9.jpg
+  - photocaption: and some more tub time.
+    photourl: 2020-12-feliz-navidad-10.jpg
+  - photocaption: French lesson with papa.
+    photourl: 2020-12-feliz-navidad-11.jpg
+  - photocaption: Defying gravity?
+    photourl: 2020-12-feliz-navidad-13.jpg
+  - photocaption: Arepas anyone?
+    photourl: 2020-12-feliz-navidad-12.jpg
+  - photocaption: Christmas Eve - finally!
+    photourl: 2020-12-feliz-navidad-14.jpg
+  - photocaption: Salud!
+    photourl: 2020-12-feliz-navidad-15.jpg
+  - photocaption: The FAM
+    photourl: 2020-12-feliz-navidad-16.jpg
 ---

@@ -16,5 +16,5 @@ photos:
   - photourl: 2021-01-eagle-creek-reopened-5.jpg
     photocaption: Looking into the canyon.
   - photourl: 2021-01-eagle-creek-reopened-6.jpg
-    photocaption: Some the most exciting parts of the trail.
+    photocaption: One of the more exciting parts of the trail.
 ---

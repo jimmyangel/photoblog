@@ -76,7 +76,7 @@ query {
           },
           {
             property: 'og:image',
-            content: this.$parent.pageImage
+            content: this.$static.metadata.siteUrl + this.$parent.pageImage
           },
           {
             name: 'twitter:card',
@@ -96,7 +96,7 @@ query {
           },
           {
             name: 'twitter:image',
-            content: this.$parent.pageImage
+            content: this.$static.metadata.siteUrl + this.$parent.pageImage
           }
         ]
       }

@@ -6,6 +6,5 @@ node_modules
 dist
 .env
 .env.*
-package-lock.json
 yarn.lock
 static/rss*.xml

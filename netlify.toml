@@ -1,5 +1,4 @@
 [build]
   publish = "dist"
-  command = "yarn cache clean && yarn add --os=linux --cpu=x64 sharp@0.25.2 --ignore-engines && yarn build"
 [[plugins]]
   package = "netlify-plugin-gridsome-cache"

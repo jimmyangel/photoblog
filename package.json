@@ -6,7 +6,6 @@
     "url": "https://github.com/jimmyangel/photoblog.git"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
@@ -17,9 +16,6 @@
     "buefy": "^0.9.4",
     "gridsome": "^0.7.22",
     "vue-infinite-loading": "^2.4.5"
-  },
-  "resolutions": {
-    "sharp": "^0.34.4"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

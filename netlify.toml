@@ -1,5 +1,6 @@
 [build]
   publish = "dist"
+  command = "gridsome build && ps auxw"
 [build.environment]
   NODE_OPTIONS = "--max-old-space-size=4096"
 [[plugins]]

@@ -1,4 +1,5 @@
 [build]
   publish = "dist"
+  command = "npm install && npm update && gridsome build"
 [[plugins]]
   package = "netlify-plugin-gridsome-cache"

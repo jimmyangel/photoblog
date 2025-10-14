@@ -6,7 +6,6 @@
     "url": "https://github.com/jimmyangel/photoblog.git"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"

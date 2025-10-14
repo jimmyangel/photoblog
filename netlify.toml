@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "npm install npm-force-resolutions && PATCH_INPUT_PY_PATH=\"$HOME/.nvm/versions/node/v14.21.3/lib/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/input.py\" && if [ -f \"$PATCH_INPUT_PY_PATH\" ]; then sed -i \"s/'rU'/'r'/g\" \"$PATCH_INPUT_PY_PATH\"; fi && npm install && npx npm-force-resolutions && npm rebuild sharp && gridsome build"
+  command = "npm install && npm rebuild sharp && gridsome build"
 [[plugins]]
   package = "netlify-plugin-gridsome-cache"

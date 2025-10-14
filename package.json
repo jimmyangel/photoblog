@@ -31,7 +31,6 @@
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-rss": "^1.2.0",
     "node-sass": "^5.0.0",
-    "npm-force-resolutions": "0.0.10",
     "sass-loader": "^10.0.5",
     "traverse": "^0.6.6"
   }
